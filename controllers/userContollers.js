@@ -32,7 +32,7 @@ module.exports = {
         } else {
             res.status(201).json({
                 statusCode: true,
-                message: 'user deleted successfully',
+                message: 'user fetched successfully',
                 results: user
             })
         }
