@@ -37,6 +37,27 @@ module.exports = {
             })
         }
     },
+    updateUser: (req, res) => {
+        const id = req.params.id;
+        const updatedUser = req.body;
+
+        const userIndex = users.findIndex(user => user.id === Number(id));
+
+        if (userIndex === -1) {
+            return res.status(404).json({
+                success: false,
+                message: 'User not found'
+            });
+        }
+
+        users[userIndex] = { ...users[userIndex], ...updatedUser };
+
+        res.json({
+            success: true,
+            message: 'User updated successfully',
+            data: users[userIndex]
+        });
+    },
     deleteUser: (req, res) => {
         const id = req.params.id;
         const index = users.findIndex(user => user.id === Number(id));
