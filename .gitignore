@@ -1,1 +1,2 @@
-/node_ modules
+.gitignore
+node_ modules
