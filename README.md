@@ -1,5 +1,6 @@
 # USER_MANAGEMENT_API
 
+![image](https://i1.wp.com/softwareengineeringdaily.com/wp-content/uploads/2020/07/Postman.jpg?resize=730%2C389&ssl=1)
 This is an api that is able to aid in managing users.
 
 ### Technologies Used
