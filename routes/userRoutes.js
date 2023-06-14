@@ -8,7 +8,7 @@ router.get('/', Home)
 router.get('/users', getUser)
 router.get('/users/:id', singleUser)
 router.post('/users', signupUser)
-router.get('/users/:id', loginUser)
+router.post('/login', loginUser)
 router.delete('/users/:id', deleteUser)
 router.put('/users/:id', updateUser)
 
